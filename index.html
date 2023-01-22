@@ -14,10 +14,22 @@
     />
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              price: "#FABE4C",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body class="px-4">
     <!-- header starts -->
-    <header class="bg-[#FFFBF0] pb-32">
+    <header class="bg-[#FFFBF0] pb-11 sm:pb-32">
       <!-- nav starts -->
       <nav></nav>
       <!-- nav ends -->
@@ -62,9 +74,120 @@
     <main class="container mx-auto mt-12">
       <!-- woman jacket starts -->
       <section>
-        <h2 class="font-['Bebas_Neue'] text-5xl text-[#363958]">
+        <h2
+          class="font-['Bebas_Neue'] text-4xl sm:text-5xl text-[#363958] mb-7 sm:mb-5 text-center sm:text-left"
+        >
           Woman Jacket
         </h2>
+        <div
+          class="font-['Roboto'] sm:grid grid-cols-3 gap-7 space-y-6 sm:space-y-0"
+        >
+          <!-- jacket 1 starts -->
+          <div class="shadow-lg rounded-2xl p-4 space-y-4">
+            <div class="bg-[#F1F1F1] rounded-2xl px-11 sm:px-14 py-6">
+              <img src="./images/jacket-1.png" alt="A woman's jacket" />
+            </div>
+            <div class="space-y-3">
+              <h3 class="font-bold text-2xl text-[#363958]">
+                Yellow Coat Jacket
+              </h3>
+              <p class="text-[#3E3E3E]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="flex justify-between items-center">
+                <p class="font-black text-4xl text-price">$234</p>
+                <button
+                  class="bg-gradient-to-b from-[#A4BC46] to-[#85A019] px-8 py-4 rounded-lg font-['Roboto'] font-medium text-white"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    class="inline w-6 h-6 mr-2"
+                  >
+                    <path
+                      d="M1 1.75A.75.75 0 011.75 1h1.628a1.75 1.75 0 011.734 1.51L5.18 3a65.25 65.25 0 0113.36 1.412.75.75 0 01.58.875 48.645 48.645 0 01-1.618 6.2.75.75 0 01-.712.513H6a2.503 2.503 0 00-2.292 1.5H17.25a.75.75 0 010 1.5H2.76a.75.75 0 01-.748-.807 4.002 4.002 0 012.716-3.486L3.626 2.716a.25.25 0 00-.248-.216H1.75A.75.75 0 011 1.75zM6 17.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15.5 19a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                    ></path>
+                  </svg>
+                  BUY NOW
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- jacket 1 ends -->
+          <!-- jacket 2 starts -->
+          <div class="shadow-lg rounded-2xl p-4 space-y-4">
+            <div class="bg-[#F1F1F1] rounded-2xl px-11 sm:px-14 py-6">
+              <img src="./images/jacket-2.png" alt="A woman's jacket" />
+            </div>
+            <div class="space-y-3">
+              <h3 class="font-bold text-2xl text-[#363958]">
+                Yellow Coat Jacket
+              </h3>
+              <p class="text-[#3E3E3E]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="flex justify-between items-center">
+                <p class="font-black text-4xl text-price">$234</p>
+                <button
+                  class="bg-gradient-to-b from-[#A4BC46] to-[#85A019] px-8 py-4 rounded-lg font-['Roboto'] font-medium text-white"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    class="inline w-6 h-6 mr-2"
+                  >
+                    <path
+                      d="M1 1.75A.75.75 0 011.75 1h1.628a1.75 1.75 0 011.734 1.51L5.18 3a65.25 65.25 0 0113.36 1.412.75.75 0 01.58.875 48.645 48.645 0 01-1.618 6.2.75.75 0 01-.712.513H6a2.503 2.503 0 00-2.292 1.5H17.25a.75.75 0 010 1.5H2.76a.75.75 0 01-.748-.807 4.002 4.002 0 012.716-3.486L3.626 2.716a.25.25 0 00-.248-.216H1.75A.75.75 0 011 1.75zM6 17.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15.5 19a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                    ></path>
+                  </svg>
+                  BUY NOW
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- jacket 2 ends -->
+          <!-- jacket 3 starts -->
+          <div class="shadow-lg rounded-2xl p-4 space-y-4">
+            <div class="bg-[#F1F1F1] rounded-2xl px-11 sm:px-14 py-6">
+              <img src="./images/jacket-3.png" alt="A woman's jacket" />
+            </div>
+            <div class="space-y-3">
+              <h3 class="font-bold text-2xl text-[#363958]">
+                Woman Leather Jacket
+              </h3>
+              <p class="text-[#3E3E3E]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="flex justify-between items-center">
+                <p class="font-black text-4xl text-price">$234</p>
+                <button
+                  class="bg-gradient-to-b from-[#A4BC46] to-[#85A019] px-8 py-4 rounded-lg font-['Roboto'] font-medium text-white"
+                >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    class="inline w-6 h-6 mr-2"
+                  >
+                    <path
+                      d="M1 1.75A.75.75 0 011.75 1h1.628a1.75 1.75 0 011.734 1.51L5.18 3a65.25 65.25 0 0113.36 1.412.75.75 0 01.58.875 48.645 48.645 0 01-1.618 6.2.75.75 0 01-.712.513H6a2.503 2.503 0 00-2.292 1.5H17.25a.75.75 0 010 1.5H2.76a.75.75 0 01-.748-.807 4.002 4.002 0 012.716-3.486L3.626 2.716a.25.25 0 00-.248-.216H1.75A.75.75 0 011 1.75zM6 17.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15.5 19a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                    ></path>
+                  </svg>
+                  BUY NOW
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- jacket 3 ends -->
+        </div>
       </section>
       <!-- woman jacket ends -->
     </main>
